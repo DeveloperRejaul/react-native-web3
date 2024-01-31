@@ -1,0 +1,49 @@
+//TODO :create this website
+https://believerssign.com/
+
+//TODO : icon 
+https://thenounproject.com/icon/
+https://blog.expo.dev/the-new-expo-cli-f4250d8e3421
+
+//TODO :  static rending example 
+import { useLocalSearchParams } from "expo-router";
+import { Text } from "react-native";
+// doc:https://docs.expo.dev/router/reference/static-rendering/
+// https://blog.expo.dev/introducing-expo-router-v2-3850fd5c3ca1?gi=ccecdf00ff40
+
+export default function Page() {
+    const { id } = useLocalSearchParams();
+    return <Text>Post {id}</Text>;
+  }
+export async function generateStaticParams(): Promise<Record<string, string>[]> {
+    // const posts = await getPosts();
+    // Return an array of params to generate static HTML files for.
+    // Each entry in the array will be a new page.
+    // return posts.map(post => ({ id: post.id }));
+}
+
+
+//TODO add css in style object
+import './styles.css';
+style={{
+    $$css: true,
+    _: 'container' // class name,
+}}
+
+// TODO add module css
+App.module.css
+
+platform specific styles
+App.module.ios.css
+App.module.web.css
+App.module.android.css
+
+
+.text {
+  color: red;
+}
+import styles, { unstable_styles } from './App.module.css';
+style={unstable_styles.text}
+
+
+  

@@ -55,7 +55,7 @@ export default forwardRef((props: appProps,ref: React.ForwardedRef<HTMLInputElem
   return (
     <View className={className} style={containerStyle}>
       <Text style={labelStyle}>{label}</Text>
-      <View className='border-rose300 bg-rose100 border-2 rounded-md p-1 w-full flex-row items-center'>
+      <View className='border-blue300 bg-blue50 border-2 rounded-md p-1 w-full flex-row items-center'>
         {!textareaType.includes(type) && 
         <input
           ref={ref as React.RefObject<HTMLInputElement>}
